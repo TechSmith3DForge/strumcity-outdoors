@@ -1,0 +1,27 @@
+body {
+  background-image: linear-gradient(to bottom, rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.3)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.partner-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.partner-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.partners-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1622239505860-3c83a7a923d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+.header-banner {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(50, 205, 50, 0.5)), url('https://images.unsplash.com/photo-1519046921377-7e22b27d4087?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+.radar-iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
