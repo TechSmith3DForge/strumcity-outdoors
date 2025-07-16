@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrumCity Outdoors - Weather & Lake Info</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cover bg-fixed">
+  <header class="header-banner py-12 text-center text-white">
+    <h1 class="text-4xl md:text-5xl font-bold" style="font-family: 'Dancing Script', cursive;">StrumCity Outdoors</h1>
+    <p class="text-xl mt-2">Captain Johnny’s Tournament Weather Check-in!</p>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section class="partners-section py-12 px-6 rounded-lg text-white mb-12">
+      <h2 class="text-3xl font-semibold mb-6 text-center" style="font-family: 'Dancing Script', cursive;">Our Partners & Affiliates</h2>
+      <p class="text-center mb-8">Discover our trusted partners for outdoor adventures and unique creations!</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="https://www.strumcitybowfishing.com" class="partner-card bg-white bg-opacity-80 p-6 rounded-lg text-center shadow-lg hover:bg-opacity-90">
+          <h3 class="text-xl font-semibold">StrumCity Bowfishing</h3>
+          <p>Join thrilling bowfishing adventures on the water!</p>
+        </a>
+        <a href="https://www.customwoodcreations.com" class="partner-card bg-white bg-opacity-80 p-6 rounded-lg text-center shadow-lg hover:bg-opacity-90">
+          <h3 class="text-xl font-semibold">Custom Wood Creations</h3>
+          <p>Handcrafted woodwork for your home and beyond.</p>
+        </a>
+        <a href="https://www.techsmith3dforge.com" class="partner-card bg-white bg-opacity-80 p-6 rounded-lg text-center shadow-lg hover:bg-opacity-90">
+          <h3 class="text-xl font-semibold">TechSmith 3D Forge</h3>
+          <p>Cutting-edge 3D printing and tech solutions.</p>
+        </a>
+        <a href="https://www.strumcityoutdoors.com" class="partner-card bg-white bg-opacity-80 p-6 rounded-lg text-center shadow-lg hover:bg-opacity-90">
+          <h3 class="text-xl font-semibold">StrumCity Outdoors</h3>
+          <p>Your go-to for weather and lake updates!</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="text-center mb-12">
+      <a href="https://www.waterdatafortexas.org/reservoirs/lake-livingston" class="text-blue-600 hover:underline text-xl">Click here for Lake Livingston Dam flow rate</a>
+    </section>
+
+    <section class="mb-12 bg-white bg-opacity-90 rounded-lg shadow-lg p-6 border-2 border-gradient-to-r from-black to-lime-500">
+      <h2 class="text-2xl font-semibold mb-4" style="font-family: 'Dancing Script', cursive;">Lake Conroe, TX Weather</h2>
+      <div class="mb-4">
+        <h3 class="text-xl font-medium">Current Conditions</h3>
+        <p id="conroe-current">Loading current conditions...</p>
+        <a href="https://www.wunderground.com/weather/us/tx/conroe" class="text-blue-600 hover:underline">More details</a>
+      </div>
+      <div class="mb-4">
+        <h3 class="text-xl font-medium">24-Hour Radar Loop</h3>
+        <iframe class="radar-iframe" src="https://www.wunderground.com/maps/radar/current/hgx?lat=30.3106&lon=-95.4563&zoom=10"></iframe>
+      </div>
+      <h3 class="text-xl font-medium mb-2">7-Day Forecast</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="conroe-forecast"></div>
+    </section>
+
+    <section class="mb-12 bg-white bg-opacity-90 rounded-lg shadow-lg p-6 border-2 border-gradient-to-r from-black to-lime-500">
+      <h2 class="text-2xl font-semibold mb-4" style="font-family: 'Dancing Script', cursive;">Coldspring, TX Weather</h2>
+      <div class="mb-4">
+        <h3 class="text-xl font-medium">Current Conditions</h3>
+        <p id="coldspring-current">Loading current conditions...</p>
+        <a href="https://www.wunderground.com/weather/us/tx/coldspring" class="text-blue-600 hover:underline">More details</a>
+      </div>
+      <div class="mb-4">
+        <h3 class="text-xl font-medium">24-Hour Radar Loop</h3>
+        <iframe class="radar-iframe" src="https://www.wunderground.com/maps/radar/current/hgx?lat=30.5909&lon=-95.1292&zoom=10"></iframe>
+      </div>
+      <h3 class="text-xl font-medium mb-2">7-Day Forecast</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="coldspring-forecast"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
